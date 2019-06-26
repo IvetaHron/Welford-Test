@@ -1,0 +1,297 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing:border-box;
+	 box-sizing: border-box;
+}
+
+body {
+
+	font-family: 'Lato', sans-serif; /* The main font*/
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+}
+
+
+.row{
+	width: 100%;
+	margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;   
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (min-width: 600px ){
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+  /* For mobile phones: Mobile first design */
+  [class*="col-"] {
+    width: 100%;
+  }
+        
+    
+/* For desktop */
+@media only screen and (min-width: 768px){
+
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.66%;
+}
+.col-3{
+	width: 24.99%;
+	
+}
+.col-4{
+	width: 33.32%;
+	
+}
+.col-5{
+	width: 41.65%;
+}
+.col-6{
+	width: 49.98%;
+
+}
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+}
+
+
+/* Italic text */
+i {
+	font-size: 16px;
+	font-family: 'EB Garamond', serif;
+}
+
+/* Different colors for text.*/
+.text-grey {
+	color: #b3b3b3;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-blue {
+	color:#00bfff;
+}
+
+
+
+/* Navigation top and bottom, but text color just on top*/
+
+nav a {
+	padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Social media icons.*/
+button {
+	border-radius: 50%;
+	border: 1px solid #b3b3b3;
+	background-color: white;
+	font-size: 16px;
+	padding: 10px;	
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.fa {
+	color: #b2ded4;
+}
+
+#search {
+	float: left;
+	color: black;
+}
+
+#basket {
+	float: right;
+	color: black;
+}
+
+#nav-padding {
+	padding-left: 7px; 
+	padding-right: 7px;
+}
+
+
+/* All images */ 
+
+img{
+
+	width: 100%;
+	height: auto;
+	padding-right: 7px;
+	padding-left: 7px;
+	object-fit: cover; 
+		
+}
+
+/* Width and height for the img in the row with 4 images.*/
+
+.row .col-3 img {
+	width: 100%;
+    height: 270px;
+
+}
+
+/* Width and height for the img in the row with 3 images.*/
+.row .col-4 img{
+	width: 100%;
+	max-height: 325px;
+	position: relative;
+}
+
+/* Width and height for the img in the row with 2 images.*/
+.row .col-6 img {
+	width: 100%;
+    height: 500px;
+}
+
+/* Text inside the 3 images */
+.box-block {
+	position: relative;
+	width: 100%;	
+}
+
+.box-block .text-block {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 60%; 
+        background: #fff;
+        color: #b3b3b3;
+        width: 85%;
+        box-shadow: 0 0 0 1px #b3b3b3, 0 0 0 5px #fff;
+        
+}
+
+.box-block .text-block h3 {
+	color: #b2ded4;
+}
+
+.box-block .text-block p {
+	font-family: 'EB Garamond', serif; 
+}
+
+
+
+/* Green box */
+.box-block-green {
+	position: relative;
+	width: 100%;	
+}
+
+.box-block-green .text-block-white {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 10%;  
+        color: #fff;
+        width: 60%;
+               
+}
+
+.box-block-green .text-block-white h1{
+
+	font-size: 380%;
+
+}
+
+/* Make the hr shorter for green box text.*/
+.box-block-green .text-block-white hr {
+
+	width: 15%;
+}
+
+
+nav hr {
+	width: 100%;
+	border-top: 1px solid #b3b3b3;
+
+}
+
+/* Sales button*/
+
+.box-block-sale {
+	position: relative;
+	width: 100%;	
+}
+
+.box-block-sale .text-block-sale {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: -8%;         
+        color: #fff;
+        width: 85%;
+               
+}
+
+.button-sale {
+	border-radius: 50%;
+	background-color: black;
+	font-size: 16px;
+	padding: 10px;
+	color: white;
+	font-family: 'EB Garamond', serif; 
+
+}
+
+
+
+
+
+
